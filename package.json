@@ -1,7 +1,7 @@
 {
-  "name": "argon2-browser",
-  "version": "1.3.0",
-  "description": "Argon2 library compiled for browser runtime",
+  "name": "argon2-wasm",
+  "version": "1.4.0",
+  "description": "Argon2 library compiled for WebAssembly runtime",
   "main": "lib/argon2.js",
   "directories": {
     "doc": "docs",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antelle/argon2-browser.git"
+    "url": "git+https://github.com/urbit/argon2-wasm.git"
   },
-  "author": "Antelle",
+  "author": "Urbit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/antelle/argon2-browser/issues"
+    "url": "https://github.com/urbit/argon2-wasm/issues"
   },
-  "homepage": "https://github.com/antelle/argon2-browser#readme"
+  "homepage": "https://github.com/urbit/argon2-wasm#readme"
 }

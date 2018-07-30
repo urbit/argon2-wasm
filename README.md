@@ -8,7 +8,7 @@ Note that currently this only runs in `node`. In the near future, this should be
 
 ```
 > let argon2 = require('.');
-> await argon2({password:'password',salt:'somesalt',distPath:'dist'});
+> argon2({password:'password',salt:'somesalt',distPath:'dist'}).then(console.log);
 { hash:
    Uint8Array [ ... ],
   hashHex:

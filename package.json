@@ -2,7 +2,7 @@
   "name": "argon2-wasm",
   "version": "1.4.0",
   "description": "Argon2 library compiled for WebAssembly runtime",
-  "main": "lib/argon2.js",
+  "main": "dist/argon2.js",
   "directories": {
     "doc": "docs",
     "lib": "lib"

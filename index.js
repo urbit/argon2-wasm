@@ -4,7 +4,7 @@ if (!WebAssembly) {
     throw new Error('WebAssembly not supported here.');
 }
 
-var loadModule = require('./generated/argon2.js');
+var loadModule = require('./generated/emscripten-runner.js');
 var wasmBinary = require('./generated/argon2.wasm.js');
 
 // XX this is unused -- should it be set in Module?

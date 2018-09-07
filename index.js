@@ -7,25 +7,11 @@ if (!WebAssembly) {
 var loadModule = require('./generated/emscripten-runner.js');
 var wasmBinary = require('./generated/argon2.wasm.js');
 
-// XX this is unused -- should it be set in Module?
-
-// const KB = 1024 * 1024;
-// const MB = 1024 * KB;
-// const GB = 1024 * MB;
-// const WASM_PAGE_SIZE = 64 * 1024;
-
-// const totalMemory = (2*GB - 64*KB) / 1024 / WASM_PAGE_SIZE;
-// const mem = args.mem || +(1024);
-// const initialMemory = Math.min(Math.max(Math.ceil(mem * 1024 / WASM_PAGE_SIZE), 256) + 256, totalMemory);
-// const wasmMemory = new WebAssembly.Memory({
-//     initial: initialMemory,
-//     maximum: totalMemory
-// });
-
 var Module = {
     printErr: console.error,
     setStatus: console.log,
     wasmBinary: wasmBinary
+    // TODO: set these to avoid using base64 everywhere?
     // wasmBinaryFile: root + 'dist/argon2.wasm',
     // locateFile: function(file) { return (args.distPath || '') + '/' + file; }
 };

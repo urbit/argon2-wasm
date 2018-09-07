@@ -2,8 +2,6 @@
 
 Argon2 (with Argon2u support) run as WebAssembly.
 
-Note that currently this only runs in `node`. In the near future, this should be usable in the browser too.
-
 ## Usage
 
 ```
@@ -26,8 +24,6 @@ Prerequesties:
 ```bash
 ./build.sh
 ```
-
-Currently, the auto-generated `dist/argon2.js` won't work as-is. The references to `Module` right at the start need to be changed to `global.Module` in order to actually pull in any values that were set in `lib/argon2.js`.
 
 ## License
 

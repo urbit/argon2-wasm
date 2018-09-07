@@ -4,10 +4,10 @@ project(agron2)
 
 add_definitions(-DARGON2_JS)
 
-set(ARCHIVE_OUTPUT_DIRECTORY dist)
-set(LIBRARY_OUTPUT_DIRECTORY dist)
-set(RUNTIME_OUTPUT_DIRECTORY dist)
-set(EXECUTABLE_OUTPUT_PATH dist)
+set(ARCHIVE_OUTPUT_DIRECTORY generated)
+set(LIBRARY_OUTPUT_DIRECTORY generated)
+set(RUNTIME_OUTPUT_DIRECTORY generated)
+set(EXECUTABLE_OUTPUT_PATH generated)
 
 include_directories(argon2/include)
 

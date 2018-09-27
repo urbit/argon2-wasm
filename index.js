@@ -24,8 +24,8 @@ var Module = {
 * @param {float}  [params.mem=1024] - used memory, in KiB
 * @param {float}  [params.hashLen=24] - desired hash length
 * @param {float}  [params.parallelism=1] - desired parallelism (will be computed in parallel only for PNaCl)
-* @param {number} [params.type=argon2.ArgonType.Argon2d] - hash type: argon2.ArgonType.Argon2d, .Argon2i, .Argon2id or .Argon2u
 * @param {number} [params.distPath=.] - asm.js script location, without trailing slash
+* @param {number} [params.type=argon2.types.Argon2d] - hash type: argon2.ArgonType.Argon2d, .Argon2i, .Argon2id or .Argon2u
 *
 * @return Promise
 *
@@ -125,4 +125,12 @@ function allocateArray(strOrArr) {
   return Module.allocate(arr, 'i8', Module.ALLOC_NORMAL);
 }
 
-module.exports = argon2;
+module.exports = {
+  hash: argon2,
+  types: {
+    Argon2d: 0,
+    Argon2i: 1,
+    Argon2id: 2,
+    Argon2u: 10
+  }
+}

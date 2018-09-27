@@ -6,7 +6,7 @@ Argon2 (with Argon2u support) run as WebAssembly.
 
 ```
 > let argon2 = require('.');
-> argon2({password:'password',salt:'somesalt',distPath:'dist'}).then(console.log);
+> argon2({pass: 'password', salt: 'somesalt', distPath: 'dist'}).then(console.log);
 { hash:
    Uint8Array [ ... ],
   hashHex:

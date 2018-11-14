@@ -1,6 +1,6 @@
 {
   "name": "argon2-wasm",
-  "version": "1.4.0",
+  "version": "0.9.0",
   "description": "Argon2 library compiled for WebAssembly runtime",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run-script build",
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",

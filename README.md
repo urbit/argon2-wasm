@@ -30,13 +30,18 @@ The input object has the following parameters and defaults:
 
 ## Building
 
-Prerequesties:
+Prerequisites:
+
 - emscripten with WebAssembly support ([howto](http://webassembly.org/getting-started/developers-guide/))
 - CMake
+
+Use the provided build script:
 
 ```bash
 ./build.sh
 ```
+
+You can also use `npm run-script build`, which will call that directly.
 
 ## License
 
